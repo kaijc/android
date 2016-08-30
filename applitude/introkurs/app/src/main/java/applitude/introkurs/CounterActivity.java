@@ -3,6 +3,7 @@ package applitude.introkurs;
 import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.Toast;
 
 public class CounterActivity extends Activity {
 
@@ -15,7 +16,8 @@ public class CounterActivity extends Activity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        //Det den skal gjore nor back er presset
+        Toast.makeText(this, "du trykket deg tilbake!", Toast.LENGTH_LONG).show();
+        //Det den skal gjore når back er presset
     }
 
 }
